@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: black;
+}
+.main {
+  background: url("./bg1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(1200px, 100vw);
+  height: 644px;
+  position: relative;
+}
+.main .box {
+  height: 644px;
+  width: 100%;
+  background-color: black;
+  opacity: 0.69;
+  position: absolute;
+  top: 0;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 70vw;
+  height: 100px;
+}
+nav img {
+  color: red;
+  width: 130px;
+  position: relative;
+  z-index: 10;
+}
+nav button {
+  position: relative;
+  z-index: 10;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 100px);
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  gap: 20px;
+  padding: 0 30px;
+}
+.hero > :nth-child(1) {
+  font-weight: 900;
+  font-size: 48px;
+  text-align: center;
+}
+.hero > :nth-child(2) {
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  font-family: "Martel Sans", sans-serif;
+}
+.hero > :nth-child(3) {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  line-height: 30px;
+  font-family: "Martel Sans", sans-serif;
+}
+.separation {
+  height: 8px;
+  background-color: rgb(46, 45, 45);
+}
+.btn {
+  padding: 3px 8px;
+  font-weight: 400;
+  color: white;
+  background-color: rgba(248, 238, 238, 0.041);
+  border: 1px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-red-sm {
+  background-color: red;
+  color: white;
+}
+.btn-red {
+  background-color: red;
+  color: white;
+  padding: 3px 24px;
+  font-size: 20px;
+  border-radius: 5px;
+  font-weight: 400;
+}
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.main input {
+  padding: 10px 101px 10px 14px;
+  font-size: 15px;
+  color: white;
+  border-radius: 5px;
+  background-color: rgba(49, 47, 47, 0.5);
+  border: 1px solid rgba(246, 238, 238, 0.5);
+}
+.first {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  max-width: 85vw;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+.secImg {
+  position: relative;
+}
+.secImg img {
+  width: 565px;
+  position: relative;
+  z-index: 10;
+}
+.secImg video {
+  position: absolute;
+  top: 51px;
+  right: 0;
+  width: 555px;
+}
+section.first > div {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+  margin-left: 10px;
+}
+section.first > div :nth-child(1) {
+  font-size: 48px;
+  font-weight: bolder;
+  font-family: "Poppins", sans-serif;
+}
+section.first > div :nth-child(2) {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.separation {
+  height: 8px;
+  background-color: rgb(46, 45, 45);
+}
+.second {
+  max-width: 90vw;
+}
+.third .secImg img{
+   z-index: 10;
+}
+.third .secImg video{
+  position: absolute;
+  width: 350px;
+  margin-right: 107px;
+  margin-top: 50px;
+}
+
+.faq {
+  background-color: black;
+  color: white;
+  padding: 34px;
+  font-size: 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.faq h2 {
+  display: block;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 44px;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.faqbox {
+  display: flex;
+  background-color: #2d2d2d;
+  justify-content: space-between;
+  padding: 24px;
+  max-width: 70vw;
+  margin: auto;
+  cursor: pointer;
+  font-size: 24px;
+  margin-bottom: 0.5rem;
+  transition: all 1s ease-out;
+}
+.faqbox svg{
+  filter: invert(1);
+}
+.faqbox:hover{
+    background-color: #414141;
+    transition: all 1s ease-out;
+}
+footer{
+  color: rgb(199, 195, 195);
+  max-width: 60vw;
+  margin: auto;
+  padding: 34px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+footer .questions{
+  padding: 34px 0px;
+}
+footer .questions a{
+  color: rgb(199, 195, 195);
+}
+.footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.footer-item{
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  font-size: 14px;
+}
+.footer-item a{
+  color: rgb(199, 195, 195);
+}
+
+
+
+@media  screen and (max-width: 1300px) {
+  nav{
+    max-width: 90vw;
+}
+
+.first {
+    flex-wrap: wrap;
+}
+.secImg img {
+    width: 305px;
+}
+
+.secImg video {
+    width: 305px;
+}
+.third .secImg video {
+  width: 200px;
+  position: absolute;
+  margin: 20px 50px;
+  justify-content: center;
+}
+
+.hero> :nth-child(1) {
+    font-size: 32px;
+}
+
+.hero> :nth-child(2) {
+    font-size: 18px;
+}
+
+.hero> :nth-child(3) {
+    font-size: 18px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 32px;
+}
+
+footer {
+    max-width: 90vw;
+    padding: 75px 0;
+}
+
+.footer-item{
+    align-items: center;
+}
+}
+
+@media screen and (max-width: 1300px) {
+
+  .footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+  }
+}
+.footer a {
+  font-size: 14px;
+  color: white;
+}
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
